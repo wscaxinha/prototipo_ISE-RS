@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>ISE - RS</title>
+</head>
+<body> 
+    <!--<header class="header">-->
+        <!--<div class="background-image"></div>-->  
+    <!--<header style="background-image: url('/IMAGES/Background1.jpg');"> --> 
+        <header class="header-bacground"> 
+        <div class="container">
+            <!--Menu-->
+            <nav>
+                <a href="/HTML/index.html">
+                    <img src="/IMAGES/logo1.png" alt="Logo do Site" class="logo">
+                </a>
+                <ul class="ul">
+                    <a href="/HTML/index.html">HOME</a>
+                    <a href="/HTML/missao.html">MISSÃO</a>
+                    <a href="/HTML/forum.html">FÓRUM</a>
+                    <a href="/HTML/mapas.html">MAPAS</a>                    
+                    <a href="/HTML/links_uteis.html">LINKS ÚTEIS</a>
+                </ul>
+            </nav>
+            <!--end Menu-->
+            <section class="banner">
+                <div class="text_banner">
+                    <h1>Informações Sobre Enchentes - RS </h1>
+                    <p>Informação que salva vidas: Antecipa-se aos desastres</p>
+                    <!-- Player de Áudio com título e botão de fechar -->
+<button onclick="abrirPlayer(this)" class="botton" id="botton">Clique-Ouça</button>
+<div id="audioContainer" style="display: none;">
+  <p id="podcastAssunto">Assunto: Como se preparar para enchentes</p>
+  <audio id="player" controls>
+    <source src="/AUDIOS/part1.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <button onclick="fecharPlayer()" id="close-button">Fechar</button>
+</div>
+                   
+                </div>
+            </section>
+        </div>
+    </header> 
+    <script>
+        function abrirPlayer(buttonElement) {
+    let audioContainer = document.getElementById("audioContainer");
+    let player = document.getElementById("player");
+    let podcastAssunto = document.getElementById("podcastAssunto");
+
+    audioContainer.style.display = "block"; // Exibe o container de áudio
+    podcastAssunto.style.display = "block"; // Exibe o assunto do podcast
+    player.play(); // Reproduz automaticamente
+
+    // Para a animação do botão ao clicar
+    buttonElement.style.animation = 'none';
+  }
+
+  function fecharPlayer() {
+    let audioContainer = document.getElementById("audioContainer");
+    let player = document.getElementById("player");
+    let botton = document.getElementById("botton"); // Seleciona o botão original
+    
+    player.pause(); // Pausa a reprodução
+    player.currentTime = 0; // Reinicia o áudio para o início
+    audioContainer.style.display = "none"; // Oculta o container de áudio
+
+    // Restaura a animação do botão ao fechar o player
+    botton.style.animation = 'pulse 2s infinite';
+  }
+    </script>
+</body>
+</html>

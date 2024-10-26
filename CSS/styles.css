@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    /*outline: none;*/
+}
+/*Corpo da Página*/
+body{
+    --background-color: #9fc8fa31;
+    
+}
+/*Cabeçalho da Página*/
+.header-bacground::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/IMAGES/bg2.jpeg);
+    opacity: 0.5;
+    z-index: -1;
+}
+/*Menu da Página*/
+nav{
+    display: flex; /*Deixa os itens do menu um do lado do outro*/    
+    padding-top: 25px;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: #0a023c;  /*Muda a cor dos itens do menu*/
+    margin: 0 20px; /*Espaçamento entre os itens do menu*/
+    font-size: 16px; /*Tamanho da Fonte*/
+    display: block;
+}
+nav ul a::after{
+    content: "";
+    background-color: #280270;
+    height: 4px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+    margin: auto;
+}
+nav ul a:hover::after{
+    width: 100%;
+} 
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+section, footer{
+    /*background-color: #f2d5b1;*/
+    padding: 20px 0;
+}
+p{
+    color: #0a023c;
+    padding: 10px; 
+    font-size: 18px;
+    font-weight: lighter;
+    font-weight: bold;
+}
+.botton {
+    background-color: #420acf;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+  }
+  .botton:hover {
+    background-color: #04b1d0;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .text_banner{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .text_banner h1{
+    font-size: 45px;
+    color: #0a023c;
+}
+/* Estilo do botão de abrir player */
+#audio-container {
+    display: none;
+    margin-top: 20px;
+}
+#close-button {
+    margin-left: 3px;
+}
+/* Estilo do texto do assunto do podcast */
+#podcastAssunto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
