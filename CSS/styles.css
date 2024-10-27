@@ -39,6 +39,11 @@ nav ul a{
     font-size: 16px; /*Tamanho da Fonte*/
     display: block;
 }
+.ul{
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;           /* Remove o preenchimento padrão da lista */
+    margin: 0;           /* Remove a margem padrão da lista */
+    }
 nav .icone-menu{
     cursor: pointer;
     font-size: 25px;
@@ -51,7 +56,7 @@ nav .fechar-icone{
     display: none;
     color: #0a023c;
 }
-@media(max-width:830px){
+@media(max-width:1000px){
     .ul{
         position: fixed;
         top: 0;
@@ -81,10 +86,7 @@ nav .fechar-icone{
         top: 46px;
         right: 28px;
     }
-}
-    
-
-    
+}    
 nav ul a::after{
     content: "";
     background-color: #280270;
@@ -200,3 +202,97 @@ section, footer{
     bottom: 0;/* Define a posição para a parte inferior da página */
     left: 0;       
 }
+/* Estilos do Chatbot */
+.chatbot-container {
+    position: absolute; /* Permite mover o chatbot */
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da parte direita da tela */
+    width: 300px; /* Largura padrão */
+    height: 400px; /* Altura padrão */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    resize: both; /* Permite redimensionar */
+    overflow: hidden; /* Esconde conteúdo que excede o tamanho */
+    z-index: 1000; /* Mantém o chatbot acima de outros elementos */
+}
+.chatbot-header {
+    background-color: #420acf;
+    color: white;
+    padding: 10px;
+    cursor: move; /* Muda o cursor para indicar que pode ser movido */
+}
+/* Estilo do corpo do chat */
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto; /* Permite rolagem se necessário */
+}
+/* Estilos das mensagens */
+.message {
+    margin: 5px 0; /* Espaçamento entre mensagens */
+    max-width: 80%; /* Largura máxima das mensagens */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px; /* Espaçamento interno */
+    position: relative; /* Para posicionar os elementos */
+}
+/* Estilo da mensagem do usuário */
+.user-message {
+    background-color: #d1e7dd; /* Cor de fundo verde claro */
+    align-self: flex-end; /* Mensagens do usuário à direita */
+}
+/* Estilo da mensagem do bot */
+.bot-message {
+    background-color: #f8d7da; /* Cor de fundo vermelho claro */
+    align-self: flex-start; /* Mensagens do bot à esquerda */
+}
+/* Estilos do rodapé do chat */
+.chat-footer {
+    display: flex;
+    padding: 10px;
+}
+.chat-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.chat-footer button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #420acf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close-button {
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que pode ser clicado */
+    float: right; /* Posiciona à direita */
+}
+.open-chatbot-button {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da parte direita da tela */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #420acf; /* Cor do fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor para indicar que pode ser clicado */
+    z-index: 1000; /* Mantém o botão acima de outros elementos */
+}
+.chatbot-title {
+    flex: 1; /* Permite que o título ocupe o espaço disponível */
+    font-weight: bold; /* Negrito para destaque */
+    color: white; /* Cor do texto */
+}
+
+

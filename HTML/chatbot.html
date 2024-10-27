@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>ISE - RS</title>
+</head>
+<body>
+    <header class="header-bacground"> 
+        <div class="container">
+            <!-- Menu -->
+            <nav>
+                <a href="/HTML/index.html">
+                    <img src="/IMAGES/logo1.png" alt="Logo do Site">
+                </a>
+                <ul class="ul">
+                    <li><a href="/HTML/index.html">HOME</a></li>
+                    <li><a href="/HTML/missao.html">MISSÃO</a></li>
+                    <li><a href="/HTML/chatbot.html">CHATBOT</a></li>
+                    <li><a href="/HTML/mapas.html">MAPAS</a></li>
+                    <li><a href="/HTML/links_uteis.html">LINKS ÚTEIS</a></li>
+                </ul>
+                <div class="fechar-icone" onclick="fecharMenu()">
+                    <i class="fa-solid fa-square-xmark"></i>
+                </div>
+                <div class="icone-menu" onclick="abrirMenu()">                            	
+                    <i class="fa-solid fa-bars"></i>  
+                </div>                   
+            </nav>
+        </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <section class="banner">
+        <div class="text_banner">
+            <h1>Informações Sobre Enchentes no Rio Grande do Sul</h1>
+            <p>Estamos aqui para ajudar a fornecer informações importantes e responder suas dúvidas.</p>
+        </div>
+    </section>    
+    <!-- Botão para abrir o chatbot -->    
+    <button id="open-chatbot" class="open-chatbot-button">Abrir Chatbot</button>
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header" id="chat-header">
+            <span class="chatbot-title">Assistente Virtual</span> <!-- Título do box -->
+            <button id="close-btn" class="close-button">✖</button> <!-- Botão de fechar -->
+        </div>
+        <div class="chat-body" id="chat-body">
+            <!-- As mensagens do chatbot serão adicionadas aqui -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+    <footer class="alinhar">
+        <div id="reg">
+            <p>&copy; 2024 ISE - RS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0e6535da59.js" crossorigin="anonymous"></script> 
+    <script src="/JS/transition.js"></script>   
+    <script src="/JS/chatbot.js"></script>
+</body>
+</html>

@@ -6,27 +6,37 @@
     <link rel="stylesheet" href="/CSS/styles.css">
     <title>ISE - RS</title>
 </head>
-<body> 
-    <!--<header class="header">-->
-        <!--<div class="background-image"></div>-->  
-    <!--<header style="background-image: url('/IMAGES/Background1.jpg');"> --> 
+<body>     
     <header class="header-bacground"> 
         <div class="container">
-            <!--Menu-->
+            <!-- Menu -->
             <nav>
                 <a href="/HTML/index.html">
                     <img src="/IMAGES/logo1.png" alt="Logo do Site" class="logo">
                 </a>
                 <ul class="ul">
-                    <a href="/HTML/index.html">HOME</a>
-                    <a href="/HTML/missao.html">MISSÃO</a>
-                    <a href="/HTML/forum.html">FÓRUM</a>
-                    <a href="/HTML/mapas.html">MAPAS</a>                    
-                    <a href="/HTML/links_uteis.html">LINKS ÚTEIS</a>
+                    <li><a href="/HTML/index.html">HOME</a></li>
+                    <li><a href="/HTML/missao.html">MISSÃO</a></li>
+                    <li><a href="/HTML/chatbot.html">CHATBOT</a></li>
+                    <li><a href="/HTML/mapas.html">MAPAS</a></li>                    
+                    <li><a href="/HTML/links_uteis.html">LINKS ÚTEIS</a></li>
                 </ul>
-            </nav>           
+                <div class="fechar-icone" onclick="fecharMenu()">
+                    <i class="fa-solid fa-square-xmark"></i>
+                </div>  
+                <div class="icone-menu" onclick="abrirMenu()">                            	
+                    <i class="fa-solid fa-bars"></i>                       
+                </div>
+            </nav>
         </div>
-         <!--End Menu-->
-    </header>     
+        <!-- End Menu -->
+    </header> 
+    <footer class="alinhar">
+        <div id="reg">
+            <p>&copy; 2024 ISE - RS. Todos os direitos reservados.</p>
+        </div>
+    </footer>  
+    <script src="https://kit.fontawesome.com/0e6535da59.js" crossorigin="anonymous"></script> 
+    <script src="/JS/transition.js"></script>  
 </body>
 </html>

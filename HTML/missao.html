@@ -6,39 +6,47 @@
     <link rel="stylesheet" href="/CSS/styles.css">
     <title>ISE - RS</title>
 </head>
-    <body>     
-        <header class="header-bacground"> 
-            <div class="container">
-                <!--Menu-->
-                <nav>
-                    <a href="/HTML/index.html">
-                        <img src="/IMAGES/logo1.png" alt="Logo do Site" class="logo">
-                    </a>
-                    <ul class="ul">
-                        <a href="/HTML/index.html">HOME</a>
-                        <a href="/HTML/missao.html">MISSÃO</a>
-                        <a href="/HTML/forum.html">FÓRUM</a>
-                        <a href="/HTML/mapas.html">MAPAS</a>                    
-                        <a href="/HTML/links_uteis.html">LINKS ÚTEIS</a>
-                    </ul>
-                </nav>
-            </div>
-         <!--End Menu-->
-        </header> 
-        <main class="text-style">
-            <section>
-                <div>
-                    <h1 class="titulo">Missão</h1>
-                    <p class="parag">
-                        Nossa missão é fornecer informações claras e precisas sobre os desastres causados pelas enchentes no Rio Grande do Sul. O objetivo é aumentar a conscientização da população, promover ações preventivas e fornecer recursos para auxiliar as pessoas a se prepararem e reagirem a esses eventos. Buscamos também colaborar com as autoridades locais,comunidades e voluntários para criar um ambiente mais seguro e preparado para enfrentar as adversidades climáticas. Com base em dados atualizados e orientações práticas, nossa plataforma serve como uma fonte confiável para obter informações cruciais em momentos de crise.  
-                    </p>                    
+<body>     
+    <header class="header-bacground"> 
+        <div class="container">
+            <!-- Menu -->
+            <nav>
+                <a href="/HTML/index.html">
+                    <img src="/IMAGES/logo1.png" alt="Logo do Site" class="logo">
+                </a>
+                <ul class="ul">
+                    <li><a href="/HTML/index.html">HOME</a></li>
+                    <li><a href="/HTML/missao.html">MISSÃO</a></li>
+                    <li><a href="/HTML/chatbot.html">CHATBOT</a></li>
+                    <li><a href="/HTML/mapas.html">MAPAS</a></li>                    
+                    <li><a href="/HTML/links_uteis.html">LINKS ÚTEIS</a></li>
+                </ul>
+                <div class="fechar-icone" onclick="fecharMenu()">
+                    <i class="fa-solid fa-square-xmark"></i>
+                </div>  
+                <div class="icone-menu" onclick="abrirMenu()">                            	
+                    <i class="fa-solid fa-bars"></i>                       
                 </div>
-            </section>
-        </main>    
-        <footer class="alinhar">
-            <div id="reg">
-                <p>&copy; 2024 ISE - RS. Todos os direitos reservados.</p>
+            </nav>
+        </div>
+        <!-- End Menu -->
+    </header> 
+    <main class="text-style">
+        <section>
+            <div>
+                <h1 class="titulo">Missão</h1>
+                <p class="parag">
+                    Nossa missão é fornecer informações claras e precisas sobre os desastres causados pelas enchentes no Rio Grande do Sul. O objetivo é aumentar a conscientização da população, promover ações preventivas e fornecer recursos para auxiliar as pessoas a se prepararem e reagirem a esses eventos. Buscamos também colaborar com as autoridades locais, comunidades e voluntários para criar um ambiente mais seguro e preparado para enfrentar as adversidades climáticas. Com base em dados atualizados e orientações práticas, nossa plataforma serve como uma fonte confiável para obter informações cruciais em momentos de crise.  
+                </p>                    
             </div>
-        </footer>    
-    </body>
+        </section>
+    </main>    
+    <footer class="alinhar">
+        <div id="reg">
+            <p>&copy; 2024 ISE - RS. Todos os direitos reservados.</p>
+        </div>
+    </footer>  
+    <script src="https://kit.fontawesome.com/0e6535da59.js" crossorigin="anonymous"></script> 
+    <script src="/JS/transition.js"></script>  
+</body>
 </html>
