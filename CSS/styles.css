@@ -4,13 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    /*outline: none;*/
+    font-family: "Roboto", sans-serif;    
 }
 /*Corpo da Página*/
 body{
-    --background-color: #9fc8fa31;
-    
+    --background-color: #9fc8fa31;    
 }
 /*Cabeçalho da Página*/
 .header-bacground::before{
@@ -22,7 +20,7 @@ body{
     bottom: 0;
     background-image: url(/IMAGES/bg2.jpeg);
     opacity: 0.5;
-    z-index: -1;
+    z-index: -1;    
 }
 /*Menu da Página*/
 nav{
@@ -60,15 +58,16 @@ nav ul a:hover::after{
 }
 section, footer{
     /*background-color: #f2d5b1;*/
-    padding: 20px 0;
+    padding: 5px 0;/*Espaçamento dos itens de centro*/
 }
-p{
+#px{
     color: #0a023c;
     padding: 10px; 
     font-size: 18px;
     font-weight: lighter;
     font-weight: bold;
 }
+/*Estilo de Efeito do Botão - Pulse*/
 .botton {
     background-color: #420acf;
     color: white;
@@ -77,7 +76,7 @@ p{
     display: inline-block;
     transition: 0.5s;
     animation: pulse 2s infinite;
-    cursor: pointer;
+    cursor: pointer;    
   }
   .botton:hover {
     background-color: #04b1d0;
@@ -109,15 +108,49 @@ p{
 /* Estilo do botão de abrir player */
 #audio-container {
     display: none;
-    margin-top: 20px;
+    margin-top: 20px;     
 }
 #close-button {
     margin-left: 3px;
 }
 /* Estilo do texto do assunto do podcast */
 #podcastAssunto {
+    color: #0a023c;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 3px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+     /* Estilização Aba Missão */
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/* Conteúdo da Missão */
+.text-style{
+    font-size: 20px;
+    color: #0a023c;
+    line-height: 1.6; /* Espaçamento 1.6 entre linhas */ 
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.titulo{
+    font-size: 40px;
+    text-align: center;    
+    padding-bottom: 10px; 
+}
+.parag{
+    text-align: justify;
+    text-indent: 2em; /* Recuo da primeira linha */
+}
+#reg{    
+    margin: 0 auto; /* Centraliza o conteúdo dentro do rodapé */
+}
+.alinhar{   
+    color: #1a1a1a;           
+    text-align: center;/* Alinha o conteúdo no centro */
+    padding: 20px 0;/* Espaçamento interno no eixo Y */
+    width: 100%;/* Ocupa toda a largura da página */
+    position: fixed;/* Fixa o rodapé na parte inferior */
+    bottom: 0;/* Define a posição para a parte inferior da página */
+    left: 0;       
+}
